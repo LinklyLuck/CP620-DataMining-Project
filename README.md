@@ -119,7 +119,7 @@ The imbalanced dataset illustrates why accuracy alone is insufficient: a no-skil
 ```python
 import pandas as pd
 
-df = pd.read_csv("datasets/heart_disease_balanced.csv")
+df = pd.read_csv("heart_disease_balanced.csv")
 X = df.drop(columns=["target"]).to_numpy()  # shape: (10000, 21)
 y = df["target"].to_numpy()                 # shape: (10000,)
 ```
